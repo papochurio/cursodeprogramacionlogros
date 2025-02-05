@@ -5,6 +5,9 @@ if introduccion == a:
     continuar = input("Bajas al cuarto piso y tienes la posibilidad de obtener un objeto, cual escoges: bate o barra de acero")
 c = "bate"
 d = "barra de acero"
+if introduccion == b:
+    continuar = print("se te acabaron los recursos y moriste d hambre")
+
 if continuar == c:
     continuar = input("¡Buena idea!, vuelves a bajar otro piso y debes romper un cristal. ¿Que haces: golpe o no?")
 e = "golpe"
