@@ -17,6 +17,10 @@ while True:
                 if continuar == i:
                     continuar = print("te escondes hasta que se fueron y sobreviviste. ¡FELICIDADES!")
                     break
+                else:
+                    print("te ignoran y sigues caminando, hasta que se te tiran encima y mueres")
+                    print("GAME OVER")
+                    break
             if continuar ==  f:
                 continuar = input("Buscaste otra salida, pero al final rompiste el cristal, tienes 2 opciones: saludar o esconder")
                 g = "saludar"
@@ -24,8 +28,10 @@ while True:
                 if continuar == g:
                     print("te ignoran y sigues caminando, hasta que se te tiran encima y mueres")
                     print("GAME OVER")
+                    break
                 else:
                     print("te escondes hasta que se fueron y sobreviviste. ¡FELICIDADES!")
+                    break
         
         elif continuar == d:
             continuar = input("¡Gran opcion!, vuelves a bajar pero te tropiezas y te cortas con la barra, deberas buscar una cura ya que estaba oxidada, tienes 2 opciones: dejar la barra o seguir")
@@ -38,6 +44,7 @@ while True:
                 if continuar == z:
                     print("te ignoran y sigues caminando, hasta que se te tiran encima,  pero, logras acabarlos y encuentras un botiquin, ¡¡FELICIDADES!!")
                     print("¡SOBREVIVISTE!")
+                    break
                 else:
                     print("al esconderte el veneno hizo efecto y moriste antes de darte cuenta")
                     print("GAME OVER")
