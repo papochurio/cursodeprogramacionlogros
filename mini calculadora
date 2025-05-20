@@ -1,0 +1,68 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdbool.h>
+
+int main (){
+    float numero1, numero2, numerofinal;
+    int caso;
+    bool pan = true;
+    printf("Bienvenido a la calculadora basica, por favor ingresar 2 numeros:\n");
+    printf("Ingresa el primer numero: ");
+    scanf("%f",&numero1);
+        
+    printf("Ingresa el segundo numero: ");
+    scanf("%f",&numero2);
+    while (pan){
+
+        
+        printf("\n\n¿Que desea hacer?\n");
+        printf("Sumar = 1\n");
+        printf("Restar = 2\n");
+        printf("Multiplicar = 3\n");
+        printf("Dividir = 4\n");
+        printf("Cambiar numeros = 5\n");
+        printf("Salir = 6\n");
+        scanf("%d",&caso);
+        switch(caso){
+            case 1 :{
+                numerofinal = numero1 + numero2;
+                printf("el resultado es: %f",numerofinal);
+                break;
+            } 
+            case 2 :{
+                numerofinal = numero1 - numero2;
+                printf("el resultado es: %f",numerofinal);
+                break;
+            }
+            case 3 :{
+                numerofinal = numero1 * numero2;
+                printf("el resultado es: %f",numerofinal);
+                break;
+            }
+            case 4 :{
+                numerofinal = numero1 / numero2;
+                printf("el resultado es: %f",numerofinal);
+                break;
+            }
+            case 5 :{
+                 printf("Ingresa el primer numero: ");
+                scanf("%f",&numero1);
+                printf("Ingresa el segundo numero: ");
+                scanf("%f",&numero2);
+                break;
+            }
+            case 6 :{
+                printf("Gracias por usar");
+                pan = false;
+                break;
+            
+            }
+            default : {
+                printf("Elija un numero mencionado");
+            }
+            
+        
+        }
+    }
+    
+}
