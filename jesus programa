@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+int main(){
+    int numero1, numero2, numero3, continuar;
+    float promedio;
+    bool pan = true;
+    int nota1 = 0;
+    int nota2 = 0;
+    int nota3 = 0;
+    while (pan){
+        if (nota1 == 0){
+            printf("\nIngrese la primera nota de 0 a 20: ");
+            scanf("%d",&numero1);
+            if (numero1 >= 0 && numero1 <= 20){
+                nota1 = 1;
+                continue;
+            }else {
+                printf("\nPor favor coloque un valor del 0 al 20");
+                continue;
+            }
+        }if (nota2 == 0){
+            printf("\nIngrese la segunda nota de 0 a 20: ");
+            scanf("%d",&numero2);
+            if (numero2 >= 0 && numero2 <= 20){
+                nota2 = 1;
+                continue;
+            }else {
+                printf("\nPor favor coloque un valor del 0 al 20");
+                continue;
+            }
+        }if (nota3 == 0){
+            printf("\nIngrese la tercera nota de 0 a 20: ");
+            scanf("%d",&numero3);
+            if (numero3 >= 0 && numero3 <= 20){
+                nota3 = 1;
+                continue;
+            }else {
+                printf("\nPor favor coloque un valor del 0 al 20");
+                continue;
+            }
+        }else {
+            promedio = (numero1 + numero2 + numero3) / 3;
+            printf("\nSu promedio fue de: %f",promedio);
+            printf("\n\nSi desea saber el promedio de otro estudiante pulse 1 si no, coloque cualquier valor: ");
+            scanf("%d",&continuar);
+            if (continuar == 1){
+                nota1 = 0;
+                nota2 = 0;
+                nota3 = 0;
+                continue;
+                
+            }else {
+                pan = false;
+                break;
+            }
+        }
+    }
+            
+}
