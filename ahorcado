@@ -1,0 +1,664 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector>
+#include <string>
+#include <cstdlib>
+#include <ctime>
+
+
+
+//Variables que almacenaran la palabra
+auto m = "_";
+
+bool as = false;
+bool bs = false;
+bool cs = false;
+bool ds = false;
+bool es = false;
+bool fs = false;
+bool gs = false;
+bool hs = false;
+bool is = false;
+bool js = false;
+///Variables Numericas
+float correct = 0;
+float incorrect = 0;
+
+///input
+
+///modificacion 1
+std::vector<std::string> palabras;
+std::string palabra;
+///modificacion 2
+
+
+///Empieza el codigp
+int main() {
+    char letter;
+    char a;
+    char b;
+    char c;
+    char d;
+    char e;
+    char f;
+    char g;
+    char h;
+    char i;
+    char j;
+    std::cout<<"Maximo 10 letras"<<std::endl;
+    
+    std::cout<<"ingresa una palabra > ";
+    
+    std::getline(std::cin, palabra);
+    std::cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"<<std::endl;
+    size_t pop = palabra.size();
+    if (pop == 1) {
+         while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        
+        }
+    }else if ( letter != a){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 1) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 6) {
+        std::cout << "--------Perdiste---------" << std::endl; 
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 2) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<")"<<std::endl;
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }else if ( letter != a and letter != b){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 2) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl; 
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 3) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }else if ( letter != a and letter != b and letter != c){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 3) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl; 
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 4) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d){
+        incorrect += 1;
+        continue;
+    }
+     ///intentos
+    if (correct >= 4) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 5) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 5) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 6) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<"."<<f<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        }
+    }if (palabra[5] == letter) {
+        if (fs == false) {
+        correct += 1;
+        f = letter;
+        fs = true;
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e and letter != f){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 6) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 7) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<"."<<f<<"."<<g<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        }
+    }if (palabra[5] == letter) {
+        if (fs == false) {
+        correct += 1;
+        f = letter;
+        fs = true;
+        }
+    }if (palabra[6] == letter) {
+        if (gs == false) {
+        correct += 1;
+        g = letter;
+        gs = true;
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e and letter != f and letter != g ){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 7) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 8) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<"."<<f<<"."<<g<<"."<<h<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        }
+    }if (palabra[5] == letter) {
+        if (fs == false) {
+        correct += 1;
+        f = letter;
+        fs = true;
+        }
+    }if (palabra[6] == letter) {
+        if (gs == false) {
+        correct += 1;
+        g = letter;
+        gs = true;
+        }
+    }if (palabra[7] == letter) {
+        if (hs == false) {
+        correct += 1;
+        h = letter;
+        hs = true;
+        
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e and letter != f and letter != g and letter != h){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 8) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 9) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<"."<<f<<"."<<g<<"."<<h<<"."<<i<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        
+        }
+    
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        
+        }
+    }if (palabra[5] == letter) {
+        if (fs == false) {
+        correct += 1;
+        f = letter;
+        fs = true;
+        
+        }
+    }if (palabra[6] == letter) {
+        if (gs == false) {
+        correct += 1;
+        g = letter;
+        gs = true;
+        
+            
+        }
+    }if (palabra[7] == letter) {
+        if (hs == false) {
+        correct += 1;
+        h = letter;
+        hs = true;
+        
+        }
+       
+    }if (palabra[8] == letter) {
+        if (is == false) {
+        correct += 1;
+        i = letter;
+        is = true;
+        
+        }
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e and letter != f and letter != g and letter != h and letter != i){
+        incorrect += 1;
+        continue;
+    }
+    ///intentos
+    if (correct >= 9) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }else if (pop == 10) {
+        while (true) {
+    std::cout<<"Hora de jugar"<<std::endl;
+    std::cout<<"incorrectos: "<< incorrect << std::endl;
+    std::cout<<"("<<a<<"."<<b<<"."<<c<<"."<<d<<"."<<e<<"."<<f<<"."<<g<<"."<<h<<"."<<i<<"."<<j<<")\n";
+    std::cin>>letter;
+    
+    ///comparador
+    if ( palabra[0] == letter) {
+        if (as == false) {
+        correct += 1;
+        a = letter;
+        as = true;
+        
+        }
+    }if (palabra[1] == letter) {
+        if (bs == false) {
+        correct += 1;
+        b = letter;
+        bs = true;
+        
+        }
+    }if (palabra[2] == letter) {
+        if (cs == false) {
+        correct += 1;
+        c = letter;
+        cs = true;
+        
+        }
+    }if (palabra[3] == letter) {
+        if (ds == false) {
+        correct += 1;
+        d = letter;
+        ds = true;
+        
+        }
+    }if (palabra[4] == letter) {
+        if (es == false) {
+        correct += 1;
+        e = letter;
+        es = true;
+        
+        }
+    }if (palabra[5] == letter) {
+        if (fs == false) {
+        correct += 1;
+        f = letter;
+        fs = true;
+        
+        }
+    }if (palabra[6] == letter) {
+        if (gs == false) {
+        correct += 1;
+        g = letter;
+        gs = true;
+        
+        }
+    }if (palabra[7] == letter) {
+        if (hs == false) {
+        correct += 1;
+        h = letter;
+        hs = true;
+        
+        }
+    }if (palabra[8] == letter) {
+        if (is == false) {
+        correct += 1;
+        i = letter;
+        is = true;
+        
+        }
+    }if (palabra[9] == letter) {
+        if (js == false) {
+        correct += 1;
+        j = letter;
+        js = true;
+        
+        }
+    
+    }else if ( letter != a and letter != b and letter != c and letter != d and letter != e and letter != f and letter != g and letter != h and letter != i and letter != j){
+        incorrect += 1;
+        continue;
+    }
+    
+    ///intentos
+    if (correct >= 10) {
+        std::cout << "Ganaste" << std::endl;
+        break;
+    }
+    
+    if (incorrect >= 5) {
+        std::cout << "--------Perdiste---------" << std::endl;
+        break;
+
+        incorrect = 0;
+    }
+    }
+    }
+   
+    ///std::cout << b << a << r << c << o; 
+    
+    return 0;
+}
